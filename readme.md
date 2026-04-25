@@ -1,249 +1,269 @@
 <div align="center">
 
-<!-- HEADER TYPING ANIMATION -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:00F7FF,50:7C3AED,100:FF2D78&height=200&section=header&text=SANTHOSH%20IYYAPPAN&fontSize=52&fontColor=ffffff&fontAlignY=38&desc=AI%20Systems%20Engineer%20%E2%80%A2%20Agentic%20RAG%20Builder%20%E2%80%A2%20Neural%20Architect&descAlignY=60&descSize=16&animation=fadeIn" width="100%"/>
+<!-- Animated Header -->
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:1a1a2e,100:16213e&height=200&section=header&text=SANTHOSH%20I&fontSize=60&fontColor=00d4ff&fontAlignY=38&desc=AI%20Engineer%20%7C%20Full%20Stack%20Dev%20%7C%20Competitive%20Programmer&descAlignY=60&descColor=a0aec0&animation=twinkling" width="100%"/>
 
-</div>
+<!-- Typing SVG -->
+<a href="https://git.io/typing-svg">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=00D4FF&center=true&vCenter=true&multiline=false&width=700&lines=Building+Intelligent+Systems+%F0%9F%A4%96;AI+%26+Data+Science+Engineer+%40+CIT+Chennai;ML+%7C+CV+%7C+Agentic+AI+%7C+LLMs;LeetCode+Knight+%E2%9A%94%EF%B8%8F+%7C+Top+6.5%25+Globally;Let's+build+the+future+together+%F0%9F%9A%80" alt="Typing SVG" />
+</a>
 
-<div align="center">
+<br/><br/>
 
-<img src="https://readme-typing-svg.demolab.com?font=Orbitron&size=22&duration=2500&pause=800&color=00F7FF&center=true&vCenter=true&width=800&lines=%E2%9A%A1+You+don't+prompt+AI.+You+engineer+it.;%F0%9F%A7%A0+Retrieval-Augmented+Generation+%7C+Agentic+AI;%F0%9F%91%81+Computer+Vision+%7C+YOLOv8+%7C+OpenCV;%E2%9A%99%EF%B8%8F+Backend+Systems+%7C+FastAPI+%7C+Python;%F0%9F%8F%97+Architecture-first+%7C+Pipeline+Design+%7C+O(n)+Thinking" alt="Typing SVG" />
-
-</div>
-
----
-
-<div align="center">
-
-<!-- STATUS BADGES -->
-![Status](https://img.shields.io/badge/STATUS-ONLINE-00F7FF?style=for-the-badge&labelColor=0a0f1e&logo=statuspage&logoColor=00F7FF)
-![Mode](https://img.shields.io/badge/MODE-AI__ENGINEER-7C3AED?style=for-the-badge&labelColor=0a0f1e&logo=openai&logoColor=7C3AED)
-![CGPA](https://img.shields.io/badge/CGPA-9.69%2F10.0-00FF88?style=for-the-badge&labelColor=0a0f1e&logo=academia&logoColor=00FF88)
-![Build](https://img.shields.io/badge/BUILD-PASSING-00FF88?style=for-the-badge&labelColor=0a0f1e&logo=githubactions&logoColor=00FF88)
-![Visitors](https://komarev.com/ghpvc/?username=Santhosh-2226&label=VISITORS&color=00F7FF&style=for-the-badge&labelColor=0a0f1e)
+<!-- Profile Views + Followers Badges -->
+![Profile Views](https://komarev.com/ghpvc/?username=Santhosh-2226&color=00d4ff&style=for-the-badge&label=PROFILE+VIEWS)
+[![GitHub followers](https://img.shields.io/github/followers/Santhosh-2226?label=Followers&style=for-the-badge&color=00d4ff)](https://github.com/Santhosh-2226)
+[![GitHub stars](https://img.shields.io/github/stars/Santhosh-2226?label=Stars&style=for-the-badge&color=00d4ff)](https://github.com/Santhosh-2226)
 
 </div>
 
 ---
 
-## 🖥️ SYSTEM BOOT
-
-```bash
-╔══════════════════════════════════════════════════════════════╗
-║           SANTHOSH_AI_SYSTEM v2.0 — INITIALIZING            ║
-╠══════════════════════════════════════════════════════════════╣
-║  > loading profile...                              [OK]      ║
-║  > initializing RAG engine...                      [OK]      ║
-║  > connecting vector database...                   [OK]      ║
-║  > mounting neural networks...                     [OK]      ║
-║  > activating agentic reasoning...                 [OK]      ║
-║  > hallucination filter: ENABLED                   [OK]      ║
-╠══════════════════════════════════════════════════════════════╣
-║  whoami     → Santhosh Iyyappan                              ║
-║  role       → AI Systems Engineer                           ║
-║  cgpa       → 9.69 / 10.0                                   ║
-║  focus      → AI · CV · Backend · RAG                       ║
-║  style      → build > talk                                   ║
-║  status     → ELITE MODE ACTIVATED ⚡                        ║
-╚══════════════════════════════════════════════════════════════╝
-```
-
----
-
-## 🧠 THINKING ENGINE
+## 🧬 About Me
 
 ```python
-class SanthoshAI:
+class SanthoshI:
     def __init__(self):
-        self.name       = "Santhosh Iyyappan"
-        self.role       = "AI Systems Engineer"
-        self.cgpa       = 9.69
-        self.strengths  = ["RAG Systems", "Agentic AI", "Computer Vision", "System Design"]
-        self.mantra     = "You don't prompt AI. You engineer it."
-        self.mode       = "engineering_first"
+        self.name        = "Santhosh I"
+        self.role        = "AI & Data Science Engineer"
+        self.university  = "Chennai Institute of Technology"
+        self.cgpa        = 9.6 / 10
+        self.year        = "2nd Year (2023–2027)"
+        self.location    = "Chennai, India 🇮🇳"
+        self.email       = "santhoshiyyappan033@gmail.com"
 
-    def solve(self, problem: str) -> str:
-        context = self.retrieve(problem)         # ✔ Grounded retrieval
-        plan    = self.reason(context)           # ✔ Chain-of-thought
-        action  = self.execute(plan)             # ✔ Deterministic pipeline
-        return action                            # ✔ Zero hallucination
+    def current_focus(self):
+        return [
+            "🔬 ML & CV Research @ CIT Research Center",
+            "🚗 Autonomous Vehicle Perception Systems",
+            "🤖 Agentic AI & LLM Applications",
+            "⚡ Competitive Programming (LeetCode Knight)",
+        ]
 
-    def handle_hallucination(self) -> str:
-        if self.no_retrieval:
-            return "❌ wrong_answer"             # Rejected
-        return "✅ grounded_answer"              # Always preferred
+    def life_philosophy(self):
+        return "Build things that matter. Learn everything. Break limits."
+
+me = SanthoshI()
+print(me.life_philosophy())
+# Output: Build things that matter. Learn everything. Break limits.
 ```
 
 ---
 
-## ⚔️ SKILL MATRIX
+## 🏆 Achievements & Rankings
 
 <div align="center">
 
-### 🧠 AI / ML / LLM
-![Python](https://img.shields.io/badge/Python-00F7FF?style=for-the-badge&logo=python&logoColor=0a0f1e)
-![LangChain](https://img.shields.io/badge/LangChain-7C3AED?style=for-the-badge&logo=chainlink&logoColor=white)
-![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
-![HuggingFace](https://img.shields.io/badge/HuggingFace-FFD21E?style=for-the-badge&logo=huggingface&logoColor=0a0f1e)
-![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=for-the-badge&logo=openai&logoColor=white)
-![Ollama](https://img.shields.io/badge/Ollama-00F7FF?style=for-the-badge&logo=ollama&logoColor=0a0f1e)
+| 🥇 Achievement | 📊 Details |
+|---|---|
+| 🟢 **LeetCode Knight** | 887 Problems · Rating: 1930 · Top 6.5% · Best Rank: 887 |
+| 🟠 **GATE 2026** | AIR 13,429 · Score: 435 · Marks: 37.3 |
+| 🔵 **TCS CodeVita 2025** | Qualified Round 2 · Global Rank: 361 |
+| 🟣 **Hack for Change 2025** | 🥈 Runner-up out of 500+ teams |
+| 🟡 **IEEE Competition (CN & AI)** | 🥇 1st Place among 50+ teams |
+| 🔴 **CodeChef** | 2⭐ · Max Rating: 1551 · 250+ problems |
+| ⚪ **Codeforces** | Max Rating: 1119 · 54 problems solved |
 
-### 🗃️ VECTOR DBs / RAG
-![FAISS](https://img.shields.io/badge/FAISS-00FF88?style=for-the-badge&logo=meta&logoColor=0a0f1e)
-![Pinecone](https://img.shields.io/badge/Pinecone-7C3AED?style=for-the-badge&logo=pinecone&logoColor=white)
-![ChromaDB](https://img.shields.io/badge/ChromaDB-FF6B00?style=for-the-badge&logo=databricks&logoColor=white)
-![Weaviate](https://img.shields.io/badge/Weaviate-00F7FF?style=for-the-badge&logo=weaviate&logoColor=0a0f1e)
+</div>
 
-### 👁️ COMPUTER VISION
-![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white)
-![YOLOv8](https://img.shields.io/badge/YOLOv8-00FF88?style=for-the-badge&logo=yolo&logoColor=0a0f1e)
-![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
-![ONNX](https://img.shields.io/badge/ONNX-7C3AED?style=for-the-badge&logo=onnx&logoColor=white)
+---
 
-### ⚙️ BACKEND / SYSTEMS
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?style=for-the-badge&logo=postgresql&logoColor=white)
-![Redis](https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+## 💻 Competitive Programming Live Stats
+
+<div align="center">
+
+<!-- LeetCode Stats -->
+[![LeetCode](https://img.shields.io/badge/LeetCode-Santhosh2226-FFA116?style=for-the-badge&logo=leetcode&logoColor=black)](https://leetcode.com/Santhosh2226)
+[![LeetCode Rating](https://img.shields.io/badge/Rating-1930%20%E2%9A%94%EF%B8%8F%20Knight-FFA116?style=for-the-badge)](https://leetcode.com/Santhosh2226)
+[![Problems](https://img.shields.io/badge/Problems-887%20Solved-success?style=for-the-badge)](https://leetcode.com/Santhosh2226)
+
+<br/>
+
+[![CodeChef](https://img.shields.io/badge/CodeChef-san2226-5B4638?style=for-the-badge&logo=codechef&logoColor=white)](https://www.codechef.com/users/san2226)
+[![CodeChef Rating](https://img.shields.io/badge/Rating-1551%20%E2%AD%90%E2%AD%90-5B4638?style=for-the-badge)](https://www.codechef.com/users/san2226)
+
+<br/>
+
+[![Codeforces](https://img.shields.io/badge/Codeforces-santhoshiyyappan033-1F8ACB?style=for-the-badge&logo=codeforces&logoColor=white)](https://codeforces.com/profile/santhoshiyyappan033)
+
+</div>
+
+---
+
+## 🚀 Featured Projects
+
+### 🌾 Hasiri AI – Agricultural Assistant
+> Flutter · TensorFlow Lite · Firebase · Google Cloud Functions · NLP · Speech-to-Text
+
+- 🤖 Built a full AI agriculture platform with **real-time crop insights** and decision support
+- 🗣️ Integrated NLP-based **voice interface** (STT & TTS) for hands-free, accessible interaction
+- 📡 Developed **LiDAR + vision-based deep learning** with sensor data fusion for obstacle detection
+- ☁️ Deployed serverless backend via **Google Cloud Functions** with Firebase real-time DB
+
+![Flutter](https://img.shields.io/badge/Flutter-02569B?style=flat-square&logo=flutter&logoColor=white)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=flat-square&logo=tensorflow&logoColor=white)
+![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=flat-square&logo=firebase&logoColor=black)
+![GCP](https://img.shields.io/badge/Google_Cloud-4285F4?style=flat-square&logo=google-cloud&logoColor=white)
+
+---
+
+### 🌊 OceanGuard AI – Coastal Risk Mitigation System
+> Python · TensorFlow · IoT · ML · REST API · Twilio
+
+- 🌊 Engineered AI system for **coastal risk mitigation** using real-time IoT sensor data
+- 📉 Reduced coastal damage by **20%** through predictive environmental pattern analysis
+- ⚡ Optimized ML models to boost system efficiency by **25%**, cutting response time significantly
+- 🔔 Integrated **Twilio SMS alerts** for real-time disaster prevention notifications
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=flat-square&logo=tensorflow&logoColor=white)
+![IoT](https://img.shields.io/badge/IoT-00979D?style=flat-square&logo=arduino&logoColor=white)
+![Twilio](https://img.shields.io/badge/Twilio-F22F46?style=flat-square&logo=twilio&logoColor=white)
+
+---
+
+### 🏥 Patient Health Care Analysis Dashboard
+> Python · Pandas · Matplotlib · Plotly · Dash · HTML · CSS · Kaggle
+
+- 📊 Created an **interactive dashboard** for patient health data visualization & trend forecasting
+- 🩺 Implemented **automated reporting** to improve medical staff decision-making accuracy
+- 🔄 Optimized data pipelines for **real-time analytics** to assist medical professionals
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![Plotly](https://img.shields.io/badge/Plotly-3F4F75?style=flat-square&logo=plotly&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white)
+![Dash](https://img.shields.io/badge/Dash-008DE4?style=flat-square&logo=plotly&logoColor=white)
+
+---
+
+## 💼 Professional Experience
+
+### 🔬 ML & CV Research Intern — CIT Chennai Research Center
+`May 2025 – July 2025 | Full Time`
+- Researched **Autonomous Navigational Architectures** to enhance AV perception systems
+- Designed an **Anomaly Detection Model** improving sensor accuracy by **75%**
+- Built real-time decision-making systems for autonomous vehicles
+- Collaborated with 5-member team + faculty on cutting-edge robotics research
+
+### 💻 Software Development Intern — Kaizenspark Pvt Ltd
+`Aug 2024 – Oct 2024 | Part Time`
+- Developed dynamic web applications, boosting user engagement by **30%**
+- Designed scalable solutions for automobile websites & student learning platforms
+- Integrated modern web technologies to improve **responsiveness & accessibility**
+
+---
+
+## 🛠️ Tech Stack
+
+### Languages
+![C](https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=c&logoColor=black)
 ![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![R](https://img.shields.io/badge/R-276DC3?style=for-the-badge&logo=r&logoColor=white)
+![SQL](https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+
+### Web & Mobile
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white)
+![Flutter](https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
+![Flask](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+
+### AI & Machine Learning
+![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
+![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
+![Hugging Face](https://img.shields.io/badge/HuggingFace-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black)
+![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white)
+![XGBoost](https://img.shields.io/badge/XGBoost-E34A00?style=for-the-badge)
+![Pinecone](https://img.shields.io/badge/Pinecone-000000?style=for-the-badge)
+
+### Databases & Cloud
+![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
+![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)
+![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazonaws&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white)
+
+---
+
+## 📊 GitHub Stats
+
+<div align="center">
+
+<img height="180em" src="https://github-readme-stats.vercel.app/api?username=Santhosh-2226&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true&bg_color=0d1117&title_color=00d4ff&icon_color=00d4ff&text_color=a0aec0"/>
+
+<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Santhosh-2226&layout=compact&langs_count=8&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00d4ff&text_color=a0aec0"/>
+
+</div>
+
+<div align="center">
+
+[![GitHub Streak](https://streak-stats.demolab.com?user=Santhosh-2226&theme=tokyonight&hide_border=true&background=0d1117&stroke=00d4ff&ring=00d4ff&fire=ff6b6b&currStreakLabel=00d4ff)](https://git.io/streak-stats)
 
 </div>
 
 ---
 
-## 🚀 PROJECT ARCHIVE
+## 🎓 Certifications
 
-<div align="center">
-
-| # | PROJECT | DOMAIN | STACK | STATUS |
-|:-:|---------|--------|-------|--------|
-| 01 | **🌾 CropCast** — Smart Agri-Commodity Price Predictor | RAG · Forecasting · Agri-AI | LangChain · LSTM · FastAPI · Pinecone | ![Live](https://img.shields.io/badge/LIVE-00FF88?style=flat-square) |
-| 02 | **🤖 Agentic RAG Engine** — Multi-agent retrieval with memory & reasoning | Agentic AI · Retrieval | FAISS · ChromaDB · LLM · Multi-Agent | ![Live](https://img.shields.io/badge/LIVE-00FF88?style=flat-square) |
-| 03 | **🔍 Neural Inspector** — Real-time industrial defect detection (99.2% precision) | Computer Vision · Edge AI | YOLOv8 · OpenCV · ONNX · PyTorch | ![Live](https://img.shields.io/badge/LIVE-00FF88?style=flat-square) |
-| 04 | **📄 DocuFlow AI** — Intelligent document processing with LLM-based Q&A | OCR · Document AI | Tesseract · GPT-4 · FastAPI · Redis | ![Active](https://img.shields.io/badge/ACTIVE-7C3AED?style=flat-square) |
-
-</div>
+| 🏅 Certification | 🏢 Issuer |
+|---|---|
+| ☁️ AWS Cloud Practitioner (CCP) | Amazon Web Services |
+| 🔐 Cybersecurity Essentials | Cisco |
+| 🌐 Networking Essentials | Cisco |
+| 🖥️ Cloud Computing (Silver) | NPTEL |
 
 ---
 
-## 📊 SYSTEM MONITOR
+## 🤝 Volunteering & Leadership
 
-<div align="center">
-
-<img src="https://github-readme-stats.vercel.app/api?username=Santhosh-2226&show_icons=true&theme=transparent&title_color=00F7FF&text_color=e2e8f0&icon_color=7C3AED&border_color=00F7FF&border_radius=8&include_all_commits=true&count_private=true&custom_title=SANTHOSH%20%E2%80%94%20GITHUB%20METRICS" height="180"/>
-
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Santhosh-2226&layout=compact&theme=transparent&title_color=00F7FF&text_color=e2e8f0&border_color=00F7FF&border_radius=8&langs_count=8&custom_title=LANGUAGE%20MATRIX&hide=html,css" height="180"/>
-
-</div>
-
-<div align="center">
-
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=Santhosh-2226&theme=transparent&ring=00F7FF&fire=FF2D78&currStreakLabel=00F7FF&sideLabels=7C3AED&currStreakNum=00FF88&sideNums=e2e8f0&dates=666&border=00F7FF&border_radius=8&background=00000000" height="180"/>
-
-</div>
-
-<div align="center">
-
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=Santhosh-2226&bg_color=030712&color=00F7FF&line=7C3AED&point=00FF88&area=true&area_color=00F7FF&border_radius=8&custom_title=CONTRIBUTION%20GRAPH%20%E2%80%94%20LIVE" width="100%"/>
-
-</div>
+- 🎯 **Leader** – Organised Technical Events @ **Takshashila '24**
+- 🔧 **Technical Head** – **INNOVEST '24** (Inter-college Tech Fest)
+- 🎨 **Technical Head (Pixora)** – **TALOS 5.0** Design & Tech Event
 
 ---
 
-## 🏆 ACHIEVEMENTS
+## 🧠 AI Trivia Game — Can You Beat Me?
+
+> 🤖 I built this section just for fun. Here's a quick AI trivia challenge. DM me your score!
+
+**Q1.** Which algorithm is used in AlphaGo's decision-making?
+- A) Gradient Descent
+- B) Monte Carlo Tree Search ✅
+- C) Breadth-First Search
+- D) Simulated Annealing
+
+**Q2.** What does RAG stand for in modern LLMs?
+- A) Rapid Agent Generation
+- B) Retrieval-Augmented Generation ✅
+- C) Recurrent Attention Graph
+- D) Reinforcement Action Graph
+
+**Q3.** Which activation function suffers from the "dying ReLU" problem?
+- A) Sigmoid
+- B) Tanh
+- C) ReLU ✅
+- D) Softmax
+
+> 🎯 **Score 3/3?** You're ready to collaborate. Let's build something! 👇
+
+---
+
+## 🌐 Connect With Me
 
 <div align="center">
 
-<img src="https://github-profile-trophy.vercel.app/?username=Santhosh-2226&theme=onestar&column=7&margin-w=8&margin-h=8&no-bg=true&no-frame=false&title=Stars,Followers,Commits,Repositories,PullRequest,Issues,MultipleLang" width="100%"/>
-
-</div>
-
----
-
-## ⚙️ SYSTEM CONFIG
-
-```yaml
-# ═══════════════════════════════════════════════
-#   SANTHOSH_IYYAPPAN :: PLAYER CONFIG v2.0
-# ═══════════════════════════════════════════════
-
-identity:
-  name:       "Santhosh Iyyappan"
-  handle:     "@Santhosh-2226"
-  role:       "AI Systems Engineer"
-  cgpa:       9.69
-  location:   "Tamil Nadu, India 🇮🇳"
-
-engineering_stack:
-  retrieval:  ["FAISS", "Pinecone", "ChromaDB", "Weaviate"]
-  frameworks: ["LangChain", "LlamaIndex", "FastAPI", "PyTorch"]
-  vision:     ["YOLOv8", "OpenCV", "ONNX", "TensorFlow"]
-  languages:  ["Python", "C++", "SQL", "Bash"]
-  infra:      ["Docker", "PostgreSQL", "Redis", "Git"]
-
-philosophy:
-  approach:       "architecture_first"
-  pipeline:       "deterministic"
-  hallucination:  "REJECTED ✗"
-  retrieval:      "grounded_answer ✔"
-  style:          "build > talk"
-
-current_focus:
-  primary:    "Agentic RAG Systems"
-  secondary:  "Multimodal LLMs"
-  tertiary:   "Edge CV Deployment"
-  learning:   "Mixture-of-Experts · GraphRAG"
-
-achievements:
-  - "✔ AI Developer"
-  - "✔ System Thinker"
-  - "✔ Problem Solver"
-  - "✔ Builder"
-  - "⚡ ELITE MODE ACTIVATED"
-```
-
----
-
-## 🎮 AI SYSTEMS DESIGN PATTERN
-
-```
-     INPUT
-       │
-       ▼
-  ┌─────────────┐
-  │  RETRIEVER  │ ◄── Vector DB (FAISS / Pinecone)
-  └──────┬──────┘
-         │  context chunks
-         ▼
-  ┌─────────────┐
-  │   REASONER  │ ◄── LLM (GPT-4 / Llama / Mistral)
-  └──────┬──────┘
-         │  reasoning chain
-         ▼
-  ┌─────────────┐
-  │    MEMORY   │ ◄── Persistent state across turns
-  └──────┬──────┘
-         │
-         ▼
-  ┌─────────────┐
-  │  CONSTRAINT │ ◄── Rules · Safety · Domain limits
-  └──────┬──────┘
-         │
-         ▼
-      OUTPUT ✔ (grounded · traceable · zero hallucination)
-```
-
----
-
-## 📡 CONNECT
-
-<div align="center">
-
-[![GitHub](https://img.shields.io/badge/GitHub-Santhosh--2226-00F7FF?style=for-the-badge&logo=github&logoColor=white&labelColor=0a0f1e)](https://github.com/Santhosh-2226)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-7C3AED?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=0a0f1e)](https://linkedin.com/in/santhosh-iyyappan)
-[![Email](https://img.shields.io/badge/Email-Contact-FF2D78?style=for-the-badge&logo=gmail&logoColor=white&labelColor=0a0f1e)](mailto:santhosh@email.com)
-[![Portfolio](https://img.shields.io/badge/Portfolio-View-00FF88?style=for-the-badge&logo=vercel&logoColor=white&labelColor=0a0f1e)](https://santhosh-iyyappan.dev)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/santhosh-i-2226)
+[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Santhosh-2226)
+[![LeetCode](https://img.shields.io/badge/LeetCode-FFA116?style=for-the-badge&logo=leetcode&logoColor=black)](https://leetcode.com/Santhosh2226)
+[![CodeChef](https://img.shields.io/badge/CodeChef-5B4638?style=for-the-badge&logo=codechef&logoColor=white)](https://www.codechef.com/users/san2226)
+[![Codeforces](https://img.shields.io/badge/Codeforces-1F8ACB?style=for-the-badge&logo=codeforces&logoColor=white)](https://codeforces.com/profile/santhoshiyyappan033)
+[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:santhoshiyyappan033@gmail.com)
 
 </div>
 
@@ -251,8 +271,12 @@ achievements:
 
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=Orbitron&size=16&duration=3000&pause=1000&color=00F7FF&center=true&vCenter=true&width=600&lines=%E2%9A%A1+%22You+don't+prompt+AI.+You+engineer+it.%22" alt="Quote"/>
+<!-- Snake animation for contribution graph -->
+<img src="https://raw.githubusercontent.com/Santhosh-2226/Santhosh-2226/output/github-contribution-grid-snake-dark.svg" alt="snake animation" />
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:FF2D78,50:7C3AED,100:00F7FF&height=120&section=footer" width="100%"/>
+<br/>
+
+<!-- Footer wave -->
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:16213e,50:1a1a2e,100:0d1117&height=120&section=footer&text=Let's%20Build%20The%20Future%20Together%20%F0%9F%9A%80&fontSize=20&fontColor=00d4ff&fontAlignY=65" width="100%"/>
 
 </div>
