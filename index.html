@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>AI Mini Game — Santhosh Iyyappan</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#0d1117;--bg2:#111827;--bg3:#1a2233;
+  --text:#e6edf3;--text2:#8b949e;--text3:#6e7681;
+  --border:#30363d;--border2:#444c56;
+  --green:#3fb950;--green-bg:#0d4429;--green-light:#1a3a23;
+  --blue:#58a6ff;--blue-bg:#0d2d5e;
+  --purple:#a371f7;--purple-bg:#2d1c6b;
+  --red:#f85149;--red-bg:#3d1c1c;
+  --amber:#d29922;--amber-bg:#3d2b00;
+  --accent:#00d4ff;
+}
+body{background:var(--bg);color:var(--text);font-family:'Fira Code',monospace;min-height:100vh;display:flex;align-items:center;justify-content:center;padding:1rem}
+.container{width:100%;max-width:680px}
+.header{text-align:center;margin-bottom:2rem}
+.header h1{font-size:1.5rem;color:var(--accent);letter-spacing:.1em;margin-bottom:.25rem}
+.header p{font-size:.8rem;color:var(--text2)}
+.hud{display:flex;gap:10px;margin-bottom:1rem}
+.hud-item{flex:1;background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.6rem .75rem;text-align:center}
+.hud-label{font-size:.65rem;color:var(--text3);text-transform:uppercase;letter-spacing:.08em;margin-bottom:2px}
+.hud-val{font-size:.9rem;font-weight:600;color:var(--text)}
+.pbar-wrap{background:var(--bg3);border-radius:4px;height:6px;margin-bottom:1.25rem;overflow:hidden}
+.pbar-fill{height:100%;background:var(--green);border-radius:4px;transition:width .5s ease}
+.level-row{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:1.25rem}
+.lcard{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.75rem;text-align:center;transition:border-color .3s}
+.lcard.active{border-color:var(--accent)}
+.lcard.done{border-color:var(--green);background:var(--green-light)}
+.lcard.locked{opacity:.35}
+.lcard-num{font-size:.6rem;color:var(--text3);margin-bottom:3px;text-transform:uppercase;letter-spacing:.08em}
+.lcard-name{font-size:.72rem;color:var(--text);font-weight:500;margin-bottom:4px}
+.lcard-status{font-size:.65rem}
+.lcard.done .lcard-status{color:var(--green)}
+.lcard.active .lcard-status{color:var(--accent)}
+.lcard.locked .lcard-status{color:var(--text3)}
+.screen{background:var(--bg2);border:1px solid var(--border);border-radius:12px;overflow:hidden}
+.screen-hdr{display:flex;align-items:center;gap:8px;padding:.65rem 1rem;border-bottom:1px solid var(--border);background:var(--bg3)}
+.badge{font-size:.6rem;padding:2px 8px;border-radius:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase}
+.badge-m{background:var(--blue-bg);color:var(--blue)}
+.badge-q{background:var(--green-bg);color:var(--green)}
+.badge-u{background:var(--purple-bg);color:var(--purple)}
+.hdr-title{font-size:.8rem;font-weight:600;color:var(--text)}
+.body{padding:1.25rem}
+.mission-txt{font-size:.82rem;line-height:1.7;color:var(--text2);margin-bottom:.75rem}
+.mission-sub{font-size:.75rem;color:var(--text3);margin-bottom:1.25rem}
+.btn{display:inline-flex;align-items:center;gap:6px;padding:.45rem .9rem;font-size:.78rem;font-family:'Fira Code',monospace;border:1px solid var(--border2);border-radius:6px;background:transparent;color:var(--text2);cursor:pointer;transition:all .15s;letter-spacing:.04em}
+.btn:hover{background:var(--bg3);color:var(--text);border-color:var(--accent)}
+.btn-g{border-color:var(--green);color:var(--green)}
+.btn-g:hover{background:var(--green-light);color:var(--green)}
+.qcount{font-size:.65rem;color:var(--text3);margin-bottom:.6rem;text-transform:uppercase;letter-spacing:.06em}
+.quiz-q{font-size:.85rem;color:var(--text);line-height:1.6;margin-bottom:1rem;font-weight:500}
+.opts{display:flex;flex-direction:column;gap:7px;margin-bottom:1rem}
+.opt{padding:.55rem .85rem;font-size:.78rem;font-family:'Fira Code',monospace;border:1px solid var(--border);border-radius:6px;background:transparent;color:var(--text2);cursor:pointer;text-align:left;transition:all .15s;line-height:1.4}
+.opt:hover:not([disabled]){background:var(--bg3);color:var(--text);border-color:var(--border2)}
+.opt.correct{border-color:var(--green);background:var(--green-light);color:var(--green);cursor:default}
+.opt.wrong{border-color:var(--red);background:var(--red-bg);color:var(--red);cursor:default}
+.opt.reveal{border-color:var(--green);background:var(--green-light);color:var(--green);cursor:default}
+.fb{font-size:.75rem;padding:.55rem .8rem;border-radius:6px;margin-bottom:.9rem;line-height:1.5}
+.fb.ok{background:var(--green-light);color:var(--green);border:1px solid var(--green)}
+.fb.fail{background:var(--red-bg);color:var(--red);border:1px solid var(--red)}
+.hidden{display:none}
+.unlock{text-align:center;padding:1.5rem 1rem}
+.unlock-icon{font-size:2.5rem;margin-bottom:.75rem;filter:drop-shadow(0 0 20px var(--accent))}
+.unlock-title{font-size:1.4rem;font-weight:700;color:var(--accent);margin-bottom:.4rem;letter-spacing:.05em}
+.unlock-sub{font-size:.78rem;color:var(--text2);margin-bottom:1.5rem}
+.skills{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-bottom:1.5rem;text-align:left}
+.skill{padding:.6rem .85rem;border:1px solid var(--border);border-radius:6px;background:var(--bg3)}
+.skill strong{font-size:.78rem;color:var(--accent);display:block;margin-bottom:2px}
+.skill span{font-size:.68rem;color:var(--text3)}
+.links{display:flex;flex-wrap:wrap;gap:7px;justify-content:center;margin-top:.75rem}
+.lnk{font-size:.72rem;padding:.35rem .7rem;border:1px solid var(--border);border-radius:6px;color:var(--text2);text-decoration:none;font-family:'Fira Code',monospace;transition:all .15s}
+.lnk:hover{border-color:var(--accent);color:var(--accent);background:rgba(0,212,255,.07)}
+.footer{text-align:center;margin-top:1.5rem;font-size:.65rem;color:var(--text3)}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.5}}
+.pulse{animation:pulse 2s infinite}
+</style>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <h1>SANTHOSH IYYAPPAN</h1>
+    <p>AI Systems Engineer · SDE Mindset · Think → Build → Scale</p>
+  </div>
+
+  <div class="hud">
+    <div class="hud-item"><div class="hud-label">Level</div><div class="hud-val" id="hud-level">01</div></div>
+    <div class="hud-item"><div class="hud-label">XP</div><div class="hud-val" id="hud-xp">0 / 300</div></div>
+    <div class="hud-item"><div class="hud-label">Status</div><div class="hud-val pulse" id="hud-status">Active</div></div>
+  </div>
+  <div class="pbar-wrap"><div class="pbar-fill" id="pbar" style="width:0%"></div></div>
+
+  <div class="level-row">
+    <div class="lcard active" id="lc0"><div class="lcard-num">Level 01</div><div class="lcard-name">Useful AI Systems</div><div class="lcard-status" id="ls0">● Active</div></div>
+    <div class="lcard locked" id="lc1"><div class="lcard-num">Level 02</div><div class="lcard-name">Logic That Scales</div><div class="lcard-status" id="ls1">○ Locked</div></div>
+    <div class="lcard locked" id="lc2"><div class="lcard-num">Level 03</div><div class="lcard-name">Grounded AI</div><div class="lcard-status" id="ls2">○ Locked</div></div>
+  </div>
+
+  <div class="screen" id="screen"></div>
+  <div class="footer">Complete all 3 levels to unlock the full developer profile</div>
+</div>
+
+<script>
+const levels=[
+  {num:"01",title:"Build Useful AI Systems",
+   mission:"AI systems must solve real problems — not just generate text. A useful AI system retrieves grounded information, handles edge cases, and integrates cleanly into software pipelines.",
+   sub:"Answer 3 questions to pass Level 01 and earn 100 XP.",
+   questions:[
+    {q:"What prevents LLM hallucination better than blind prompting?",
+     opts:["Adding more training data","Retrieval + evidence grounding","Larger context window","Higher temperature sampling"],
+     a:1,explain:"Retrieval-Augmented Generation (RAG) grounds LLM responses in retrieved evidence, directly reducing hallucination."},
+    {q:"Which component makes an AI pipeline production-ready?",
+     opts:["A polished UI","Logs, constraints, APIs, data quality checks, failure handling","Using the largest available model","Streaming responses"],
+     a:1,explain:"Production systems require observability, data integrity, clean APIs, and robust failure handling — not just output quality."},
+    {q:"What is stronger than a chatbot demo?",
+     opts:["A chatbot with a better prompt","More training examples","A traceable system with reasoning + retrieval + backend","A React frontend"],
+     a:2,explain:"Demos prove feasibility. Production AI needs traceability, a retrieval layer, and backend integration to be genuinely useful."}
+   ]},
+  {num:"02",title:"Write Logic That Scales",
+   mission:"Good AI engineering is still software engineering. Systems must handle scale, edge cases, and failure gracefully — not just the happy path.",
+   sub:"Answer 3 questions to pass Level 02 and earn 100 XP.",
+   questions:[
+    {q:"What does FAISS enable in a RAG system?",
+     opts:["Fine-tuning a language model","Fast approximate nearest-neighbor search over embeddings","Web scraping at scale","Real-time model training"],
+     a:1,explain:"FAISS (Facebook AI Similarity Search) enables fast vector similarity search — the retrieval backbone of most RAG systems."},
+    {q:"Which best describes BM25 in information retrieval?",
+     opts:["A deep learning embedding model","A ranking function based on term frequency and document length normalization","A database query language","A neural re-ranker"],
+     a:1,explain:"BM25 is a classical lexical ranking algorithm — fast, interpretable, and often combined with dense retrieval for hybrid search."},
+    {q:"In API design, what does idempotency mean?",
+     opts:["The API returns different results each call","Making the same request multiple times produces the same result","The API has no authentication","Responses are always cached"],
+     a:1,explain:"Idempotent endpoints (GET, PUT, DELETE) can be safely retried — critical for fault-tolerant distributed systems."}
+   ]},
+  {num:"03",title:"Make AI Grounded and Useful",
+   mission:"Grounded AI systems cite their sources, constrain their scope, and fail gracefully. Real AI engineering closes the loop between model output and real-world data.",
+   sub:"Answer 3 questions to pass Level 03 and unlock the full profile.",
+   questions:[
+    {q:"What is the role of embeddings in semantic search?",
+     opts:["They compress images for storage","They convert text into dense vectors that capture semantic meaning","They replace the LLM in a RAG pipeline","They encrypt API keys"],
+     a:1,explain:"Embedding models map text into high-dimensional vector space where semantically similar content is geometrically close."},
+    {q:"What does 'evidence grounding' mean in an AI response?",
+     opts:["The model gives longer answers","The response is traceable to specific retrieved documents or facts","The model uses a bigger parameter count","Answers are formatted in JSON"],
+     a:1,explain:"Evidence grounding means each claim in an AI response maps to a verifiable source — the key to trustworthy AI outputs."},
+    {q:"Which best describes agentic AI behavior?",
+     opts:["Generating long completions in one shot","An AI that plans, selects tools, executes actions, and reasons across multiple steps","An AI with a custom system prompt","Fine-tuning on domain data"],
+     a:1,explain:"Agentic AI systems plan goals, invoke tools (APIs, search, code), observe results, and iterate — going beyond single-turn generation."}
+   ]}
+];
+
+let S={level:0,xp:0,qIdx:0,answered:false,done:[false,false,false],phase:'mission'};
+
+function upd(){
+  document.getElementById('hud-level').textContent='0'+(S.level+1);
+  document.getElementById('hud-xp').textContent=S.xp+' / 300';
+  document.getElementById('hud-status').textContent=S.xp===300?'UNLOCKED':'Active';
+  document.getElementById('pbar').style.width=(S.xp/3)+'%';
+  for(let i=0;i<3;i++){
+    const c=document.getElementById('lc'+i),s=document.getElementById('ls'+i);
+    c.className='lcard';
+    if(S.done[i]){c.classList.add('done');s.textContent='✓ Done';s.style.color='var(--green)'}
+    else if(i===S.level){c.classList.add('active');s.textContent='● Active';s.style.color='var(--accent)'}
+    else{c.classList.add('locked');s.textContent='○ Locked';s.style.color=''}
+  }
+}
+
+function render(){
+  upd();
+  if(S.xp===300){renderUnlock();return;}
+  const lv=levels[S.level];
+  if(S.phase==='mission')renderMission(lv);else renderQuiz(lv);
+}
+
+function renderMission(lv){
+  document.getElementById('screen').innerHTML=`
+    <div class="screen-hdr"><span class="badge badge-m">Level ${lv.num}</span><span class="hdr-title">${lv.title}</span></div>
+    <div class="body">
+      <p class="mission-txt">${lv.mission}</p>
+      <p class="mission-sub">${lv.sub}</p>
+      <button class="btn btn-g" onclick="go()">Start Quiz →</button>
+    </div>`;
+}
+
+function go(){S.phase='quiz';S.qIdx=0;S.answered=false;render();}
+
+function renderQuiz(lv){
+  const q=lv.questions[S.qIdx];
+  document.getElementById('screen').innerHTML=`
+    <div class="screen-hdr"><span class="badge badge-q">Quiz</span><span class="hdr-title">Level ${lv.num} — Q${S.qIdx+1} of 3</span></div>
+    <div class="body">
+      <div class="qcount">Question ${S.qIdx+1}/3 · ${Math.round(100/3)} XP per question</div>
+      <div class="quiz-q">${q.q}</div>
+      <div class="opts" id="opts">${q.opts.map((o,i)=>`<button class="opt" onclick="ans(${i})">${o}</button>`).join('')}</div>
+      <div id="fb" class="hidden"></div>
+      <div id="nb" class="hidden"></div>
+    </div>`;
+}
+
+function ans(i){
+  if(S.answered)return;
+  S.answered=true;
+  const lv=levels[S.level],q=lv.questions[S.qIdx];
+  document.querySelectorAll('.opt').forEach(o=>o.disabled=true);
+  const ok=i===q.a;
+  document.querySelectorAll('.opt')[i].classList.add(ok?'correct':'wrong');
+  if(!ok)document.querySelectorAll('.opt')[q.a].classList.add('reveal');
+  const fb=document.getElementById('fb');
+  fb.className='fb '+(ok?'ok':'fail');
+  fb.textContent=(ok?'✓ Correct — ':'✗ Wrong — ')+q.explain;
+  fb.classList.remove('hidden');
+  if(ok)S.xp=Math.min(300,S.xp+Math.round(100/3));
+  const nb=document.getElementById('nb');
+  nb.classList.remove('hidden');
+  nb.innerHTML=S.qIdx===2
+    ?`<button class="btn btn-g" onclick="fin()">Complete Level →</button>`
+    :`<button class="btn" onclick="nxt()">Next question →</button>`;
+  upd();
+}
+
+function nxt(){S.qIdx++;S.answered=false;render();}
+function fin(){
+  S.done[S.level]=true;S.xp=(S.level+1)*100;
+  if(S.level<2){S.level++;S.phase='mission';S.qIdx=0;S.answered=false;}
+  render();
+}
+
+function renderUnlock(){
+  document.getElementById('screen').innerHTML=`
+    <div class="screen-hdr"><span class="badge badge-u">Unlocked</span><span class="hdr-title">Developer Profile — 300 XP</span></div>
+    <div class="body">
+      <div class="unlock">
+        <div class="unlock-icon">◈</div>
+        <div class="unlock-title">Profile Unlocked</div>
+        <div class="unlock-sub">AI Systems Engineer · SDE Mindset · Think → Build → Scale</div>
+      </div>
+      <div class="skills">
+        <div class="skill"><strong>Agentic AI</strong><span>Planning · Tools · Reasoning</span></div>
+        <div class="skill"><strong>RAG Systems</strong><span>Retrieval · Evidence · Grounding</span></div>
+        <div class="skill"><strong>Computer Vision</strong><span>YOLO · CNN · OpenCV</span></div>
+        <div class="skill"><strong>Backend Eng.</strong><span>APIs · Databases · Services</span></div>
+        <div class="skill"><strong>ML / DS Stack</strong><span>PyTorch · XGBoost · Scikit</span></div>
+        <div class="skill"><strong>DSA + Design</strong><span>Algorithms · System Design</span></div>
+      </div>
+      <div class="links">
+        <a class="lnk" href="https://www.linkedin.com/in/santhosh-iyyappan-b96645291/" target="_blank">LinkedIn ↗</a>
+        <a class="lnk" href="https://github.com/Santhosh-2226" target="_blank">GitHub ↗</a>
+        <a class="lnk" href="https://leetcode.com/Santhosh2226" target="_blank">LeetCode ↗</a>
+        <a class="lnk" href="https://www.codechef.com/users/san2226" target="_blank">CodeChef ↗</a>
+        <a class="lnk" href="https://codeforces.com/profile/santhoshiyyappan033" target="_blank">Codeforces ↗</a>
+        <a class="lnk" href="mailto:santhoshiyyappan033@gmail.com">Email ↗</a>
+      </div>
+    </div>`;
+}
+
+render();
+</script>
+</body>
+</html>
