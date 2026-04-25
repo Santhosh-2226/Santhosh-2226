@@ -40,23 +40,19 @@ I care about systems that are **traceable, scalable, useful, and engineered prop
 <tr>
 <td align="center" width="25%">
 <img src="https://img.shields.io/badge/Agentic%20AI-0d1117?style=for-the-badge&logo=openai&logoColor=00d4ff" />
-<br/>
-Planning · Tools · Reasoning
+<br/>Planning · Tools · Reasoning
 </td>
 <td align="center" width="25%">
 <img src="https://img.shields.io/badge/RAG%20Systems-0d1117?style=for-the-badge&logo=googlegemini&logoColor=00d4ff" />
-<br/>
-Retrieval · Evidence · Grounding
+<br/>Retrieval · Evidence · Grounding
 </td>
 <td align="center" width="25%">
 <img src="https://img.shields.io/badge/Computer%20Vision-0d1117?style=for-the-badge&logo=opencv&logoColor=00d4ff" />
-<br/>
-Detection · CNN · OpenCV
+<br/>Detection · CNN · OpenCV
 </td>
 <td align="center" width="25%">
 <img src="https://img.shields.io/badge/Backend%20Systems-0d1117?style=for-the-badge&logo=fastapi&logoColor=00d4ff" />
-<br/>
-APIs · Databases · Services
+<br/>APIs · Databases · Services
 </td>
 </tr>
 </table>
@@ -125,13 +121,13 @@ APIs · Databases · Services
 <tr>
 <td align="center">
 
-### AI Engineering  
+### AI Engineering
 RAG · LLMs · Agentic AI · Prompt Engineering · MCP · Retrieval · Embeddings · Evidence Grounding
 
 </td>
 <td align="center">
 
-### Machine Learning  
+### Machine Learning
 TensorFlow · PyTorch · XGBoost · Random Forest · Scikit-Learn · Feature Engineering · Model Evaluation
 
 </td>
@@ -139,13 +135,13 @@ TensorFlow · PyTorch · XGBoost · Random Forest · Scikit-Learn · Feature Eng
 <tr>
 <td align="center">
 
-### Computer Vision  
+### Computer Vision
 OpenCV · YOLO · CNN · Keras · Image Processing · Detection · Sensor Fusion
 
 </td>
 <td align="center">
 
-### Software Engineering  
+### Software Engineering
 DSA · OOP · REST APIs · JWT · Databases · Caching · Debugging · Git · Deployment
 
 </td>
@@ -158,46 +154,52 @@ DSA · OOP · REST APIs · JWT · Databases · Caching · Debugging · Git · De
 
 <div align="center">
 
-## AI Mini Game: Unlock My Developer Profile
+## AI Mini Game — Unlock My Developer Profile
 
-<table>
-<tr>
-<td align="center" width="33%">
-
-### Level 01  
-**Mission:** Build useful AI systems.
-
-</td>
-<td align="center" width="33%">
-
-### Level 02  
-**Mission:** Write logic that scales.
-
-</td>
-<td align="center" width="33%">
-
-### Level 03  
-**Mission:** Make AI grounded and useful.
-
-</td>
-</tr>
-</table>
+> **GitHub doesn't support interactive HTML.** Play the full interactive version with real quizzes, XP, and level progression below.
 
 <br/>
 
-### Quick AI Challenge
+[![Play the AI Quiz Game](https://img.shields.io/badge/Play%20Interactive%20Game-Unlock%20My%20Profile-00d4ff?style=for-the-badge&labelColor=0d1117&logo=github)](https://santhosh-2226.github.io/ai-profile-game/)
+
+<br/>
+
+### How It Works
+
+| Step | Action | Reward |
+|------|---------|--------|
+| Level 01 | Answer 3 questions on **Useful AI Systems** | +100 XP |
+| Level 02 | Answer 3 questions on **Logic That Scales** | +100 XP |
+| Level 03 | Answer 3 questions on **Grounded AI** | +100 XP |
+| 300 XP | Profile fully **UNLOCKED** | Full skill map + links |
+
+<br/>
+
+### Quick Knowledge Check
 
 | Question | Answer |
-|---|---|
-| What prevents LLM hallucination better than blind prompting? | Retrieval + evidence grounding |
-| What makes an AI system production-ready? | Logs, constraints, APIs, data quality, failure handling |
-| What is stronger than a chatbot demo? | A traceable system with reasoning + retrieval + backend |
+|----------|--------|
+| What prevents LLM hallucination better than blind prompting? | **Retrieval + evidence grounding (RAG)** |
+| What makes an AI system production-ready? | **Logs · constraints · APIs · data quality · failure handling** |
+| What is stronger than a chatbot demo? | **A traceable system with reasoning + retrieval + backend** |
+| What does FAISS enable in a RAG pipeline? | **Fast approximate nearest-neighbor search over embeddings** |
+| What is BM25? | **A lexical ranking function using term frequency + doc length normalization** |
+| What defines agentic AI behavior? | **Plan → select tools → execute → observe → iterate** |
 
 <br/>
 
-<img src="https://img.shields.io/badge/Game%20Status-Profile%20Unlocked-00d4ff?style=for-the-badge&labelColor=0d1117" />
+<img src="https://img.shields.io/badge/Game%20Status-Play%20to%20Unlock-7c3aed?style=for-the-badge&labelColor=0d1117" />
 
 </div>
+
+---
+
+> **Setup Instructions for the Interactive Game:**
+> 1. Create a new repo named `ai-profile-game` in your GitHub account
+> 2. Add an `index.html` with the interactive game (see Claude chat for the full HTML source)
+> 3. Enable GitHub Pages → source: `main` branch → root
+> 4. Update the badge link above to `https://santhosh-2226.github.io/ai-profile-game/`
+> 5. Remove this blockquote from your README once set up
 
 ---
 
@@ -241,7 +243,7 @@ DSA · OOP · REST APIs · JWT · Databases · Caching · Debugging · Git · De
 
 <br/><br/>
 
-<b>"I build systems that connect intelligence, software, and real-world decisions."</b>
+**"I build systems that connect intelligence, software, and real-world decisions."**
 
 <br/><br/>
 
