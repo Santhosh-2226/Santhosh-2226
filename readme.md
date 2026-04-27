@@ -1,148 +1,121 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:111827,100:0f172a&height=210&section=header&text=SANTHOSH%20IYYAPPAN&fontSize=52&fontColor=00d4ff&fontAlignY=38&desc=AI%20Systems%20Engineer%20%7C%20SDE%20Mindset%20%7C%20Problem%20Solver&descAlignY=60&descColor=a0aec0&animation=twinkling" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:000000,30:0d1117,60:001a00,100:000000&height=220&section=header&text=%3E%20SANTHOSH_IYYAPPAN.exe&fontSize=46&fontColor=00ff41&fontAlignY=40&desc=%5B%20AI%20Systems%20Engineer%20%7C%20SDE%20Mindset%20%7C%20Problem%20Solver%20%5D&descAlignY=62&descColor=39ff14&animation=twinkling" width="100%"/>
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=22&pause=1000&color=00D4FF&center=true&vCenter=true&width=900&lines=Building+AI+Systems+That+Think;Agentic+AI+%7C+RAG+%7C+Computer+Vision;Backend+Engineering+%7C+APIs+%7C+Databases;DSA+%2B+System+Design+%2B+Real+World+AI;Think+%E2%86%92+Build+%E2%86%92+Scale" alt="Typing SVG" />
+</div>
+
+```
+╔══════════════════════════════════════════════════════════════════════════╗
+║  SYSTEM BOOT SEQUENCE INITIALIZED...                                     ║
+║  > Loading AI_ENGINEER profile...                      [████████] 100%   ║
+║  > Mounting skill modules...                           [████████] 100%   ║
+║  > Establishing neural links...                        [████████] 100%   ║
+║  > STATUS: ONLINE | USER: SANTHOSH IYYAPPAN | CLEARANCE: L3             ║
+╚══════════════════════════════════════════════════════════════════════════╝
+```
+
+<div align="center">
+
+<img src="https://readme-typing-svg.demolab.com?font=Share+Tech+Mono&weight=700&size=20&pause=800&color=00FF41&center=true&vCenter=true&width=900&lines=%24+whoami+%E2%86%92+AI+Systems+Engineer;%24+skills+--list+%E2%86%92+Agentic+AI+%7C+RAG+%7C+CV+%7C+Backend;%24+mission+--run+%E2%86%92+Build+AI+That+Thinks%2C+Not+Just+Talks;%24+stack+--show+%E2%86%92+Python+%7C+LLMs+%7C+FAISS+%7C+FastAPI;%24+status+--check+%E2%86%92+ONLINE+%26+BUILDING" alt="Typing SVG" />
 
 <br/><br/>
 
-<img src="https://komarev.com/ghpvc/?username=Santhosh-2226&color=00d4ff&style=for-the-badge&label=PROFILE+VIEWS" />
-<img src="https://img.shields.io/github/followers/Santhosh-2226?label=Followers&style=for-the-badge&color=7c3aed&labelColor=0d1117" />
-<img src="https://img.shields.io/github/stars/Santhosh-2226?label=Stars&style=for-the-badge&color=00d4ff&labelColor=0d1117" />
+<img src="https://komarev.com/ghpvc/?username=Santhosh-2226&color=00ff41&style=for-the-badge&label=PROFILE+VIEWS&labelColor=0d1117" />
+<img src="https://img.shields.io/github/followers/Santhosh-2226?label=Followers&style=for-the-badge&color=00ff41&labelColor=0d1117" />
+<img src="https://img.shields.io/github/stars/Santhosh-2226?label=Stars&style=for-the-badge&color=39ff14&labelColor=0d1117" />
 
 </div>
 
 ---
 
-<div align="center">
+## `> cat /etc/identity.conf`
 
-## AI + SDE Identity
+```yaml
+# ══════════════════════════════════════════════════════
+# ENGINEER PROFILE — SANTHOSH IYYAPPAN
+# ══════════════════════════════════════════════════════
 
-<img src="https://img.shields.io/badge/Role-AI%20Systems%20Engineer-00d4ff?style=for-the-badge&labelColor=0d1117" />
-<img src="https://img.shields.io/badge/Mindset-SDE%20%2B%20AI-7c3aed?style=for-the-badge&labelColor=0d1117" />
-<img src="https://img.shields.io/badge/Focus-Think%20Build%20Scale-00d4ff?style=for-the-badge&labelColor=0d1117" />
+name:         Santhosh Iyyappan
+role:         AI Systems Engineer
+mindset:      SDE + AI Hybrid
+clearance:    L3 — Full Stack AI
+location:     India
+status:       ACTIVE — Building in production
 
-<br/><br/>
+core_belief:
+  - "AI without engineering is a toy"
+  - "Engineering without AI is a missed opportunity"
+  - "Real systems are traceable, grounded, and scalable"
 
-I build intelligent systems by combining **AI models, backend engineering, data pipelines, retrieval systems, and real-world product thinking**.
-
-I care about systems that are **traceable, scalable, useful, and engineered properly** — not just fancy demos.
-
-</div>
+operating_mode: Think → Build → Scale
+```
 
 ---
 
-<div align="center">
+## `> ls -la /core/engineering_areas/`
 
-## Core Engineering Areas
+<div align="center">
 
 <table>
 <tr>
 <td align="center" width="25%">
-<img src="https://img.shields.io/badge/Agentic%20AI-0d1117?style=for-the-badge&logo=openai&logoColor=00d4ff" />
-<br/>Planning · Tools · Reasoning
+
+```
+┌─────────────────┐
+│  AGENTIC  AI    │
+│  ◈ MODULE ON   │
+├─────────────────┤
+│ Planning        │
+│ Tool Selection  │
+│ Reasoning       │
+│ Iteration       │
+└─────────────────┘
+```
+
 </td>
 <td align="center" width="25%">
-<img src="https://img.shields.io/badge/RAG%20Systems-0d1117?style=for-the-badge&logo=googlegemini&logoColor=00d4ff" />
-<br/>Retrieval · Evidence · Grounding
+
+```
+┌─────────────────┐
+│  RAG  SYSTEMS   │
+│  ◈ MODULE ON   │
+├─────────────────┤
+│ Retrieval       │
+│ Embeddings      │
+│ Evidence        │
+│ Grounding       │
+└─────────────────┘
+```
+
 </td>
 <td align="center" width="25%">
-<img src="https://img.shields.io/badge/Computer%20Vision-0d1117?style=for-the-badge&logo=opencv&logoColor=00d4ff" />
-<br/>Detection · CNN · OpenCV
+
+```
+┌─────────────────┐
+│ COMPUTER VISION │
+│  ◈ MODULE ON   │
+├─────────────────┤
+│ YOLO Detection  │
+│ CNN Arch        │
+│ OpenCV Ops      │
+│ Sensor Fusion   │
+└─────────────────┘
+```
+
 </td>
 <td align="center" width="25%">
-<img src="https://img.shields.io/badge/Backend%20Systems-0d1117?style=for-the-badge&logo=fastapi&logoColor=00d4ff" />
-<br/>APIs · Databases · Services
-</td>
-</tr>
-</table>
 
-</div>
-
----
-
-<div align="center">
-
-## Tech Arsenal
-
-### Languages
-<img src="https://skillicons.dev/icons?i=c,cpp,java,python,javascript,typescript,r" />
-
-<br/><br/>
-
-### Frontend + Mobile
-<img src="https://skillicons.dev/icons?i=html,css,react,nextjs,tailwind,bootstrap,flutter" />
-
-<br/><br/>
-
-### Backend + Databases
-<img src="https://skillicons.dev/icons?i=nodejs,express,fastapi,flask,mongodb,mysql,postgres,sqlite,firebase,supabase" />
-
-<br/><br/>
-
-### AI / ML / Data
-<img src="https://skillicons.dev/icons?i=tensorflow,pytorch,opencv" />
-
-<br/>
-
-<img src="https://img.shields.io/badge/Scikit--Learn-0d1117?style=for-the-badge&logo=scikitlearn&logoColor=F7931E" />
-<img src="https://img.shields.io/badge/XGBoost-0d1117?style=for-the-badge" />
-<img src="https://img.shields.io/badge/Pandas-0d1117?style=for-the-badge&logo=pandas" />
-<img src="https://img.shields.io/badge/NumPy-0d1117?style=for-the-badge&logo=numpy" />
-<img src="https://img.shields.io/badge/Plotly-0d1117?style=for-the-badge&logo=plotly" />
-<img src="https://img.shields.io/badge/YOLO-0d1117?style=for-the-badge" />
-<img src="https://img.shields.io/badge/CNN-0d1117?style=for-the-badge" />
-<img src="https://img.shields.io/badge/FAISS-0d1117?style=for-the-badge" />
-<img src="https://img.shields.io/badge/BM25-0d1117?style=for-the-badge" />
-<img src="https://img.shields.io/badge/RAG-0d1117?style=for-the-badge" />
-<img src="https://img.shields.io/badge/LLMs-0d1117?style=for-the-badge&logo=openai&logoColor=00d4ff" />
-
-<br/><br/>
-
-### Tools + Cloud + DevOps
-<img src="https://skillicons.dev/icons?i=git,github,docker,linux,aws,postman,figma,vscode,vercel,netlify" />
-
-<br/>
-
-<img src="https://img.shields.io/badge/Twilio-0d1117?style=for-the-badge&logo=twilio" />
-<img src="https://img.shields.io/badge/Canva-0d1117?style=for-the-badge&logo=canva" />
-<img src="https://img.shields.io/badge/Jenkins-0d1117?style=for-the-badge&logo=jenkins" />
-<img src="https://img.shields.io/badge/Render-0d1117?style=for-the-badge&logo=render" />
-
-</div>
-
----
-
-<div align="center">
-
-## Skill Map
-
-<table>
-<tr>
-<td align="center">
-
-### AI Engineering
-RAG · LLMs · Agentic AI · Prompt Engineering · MCP · Retrieval · Embeddings · Evidence Grounding
-
-</td>
-<td align="center">
-
-### Machine Learning
-TensorFlow · PyTorch · XGBoost · Random Forest · Scikit-Learn · Feature Engineering · Model Evaluation
-
-</td>
-</tr>
-<tr>
-<td align="center">
-
-### Computer Vision
-OpenCV · YOLO · CNN · Keras · Image Processing · Detection · Sensor Fusion
-
-</td>
-<td align="center">
-
-### Software Engineering
-DSA · OOP · REST APIs · JWT · Databases · Caching · Debugging · Git · Deployment
+```
+┌─────────────────┐
+│ BACKEND SYSTEMS │
+│  ◈ MODULE ON   │
+├─────────────────┤
+│ REST APIs       │
+│ Databases       │
+│ Auth/JWT        │
+│ Deployment      │
+└─────────────────┘
+```
 
 </td>
 </tr>
@@ -152,101 +125,303 @@ DSA · OOP · REST APIs · JWT · Databases · Caching · Debugging · Git · De
 
 ---
 
+## `> cat /etc/tech_stack.json`
+
+```json
+{
+  "languages": {
+    "primary":    ["Python", "Java", "C++", "JavaScript", "TypeScript"],
+    "secondary":  ["C", "R"],
+    "proficiency": "Production-ready"
+  },
+  "AI_ML": {
+    "frameworks":  ["TensorFlow", "PyTorch", "Scikit-Learn", "Keras"],
+    "models":      ["YOLO", "CNN", "XGBoost", "Random Forest", "LLMs"],
+    "retrieval":   ["FAISS", "BM25", "ChromaDB"],
+    "techniques":  ["RAG", "Prompt Engineering", "Agentic AI", "MCP", "Embeddings"]
+  },
+  "backend": {
+    "frameworks":  ["FastAPI", "Flask", "Node.js", "Express"],
+    "databases":   ["MongoDB", "PostgreSQL", "MySQL", "SQLite", "Firebase", "Supabase"],
+    "tools":       ["REST APIs", "JWT", "Docker", "Postman"]
+  },
+  "frontend": {
+    "frameworks":  ["React", "Next.js", "Tailwind CSS", "Bootstrap"],
+    "mobile":      ["Flutter"],
+    "markup":      ["HTML5", "CSS3"]
+  },
+  "devops_cloud": {
+    "platforms":   ["AWS", "Vercel", "Netlify", "Render"],
+    "tools":       ["Git", "GitHub", "Docker", "Linux", "Jenkins"]
+  },
+  "status": "ALL SYSTEMS OPERATIONAL"
+}
+```
+
+---
+
+## `> skill_map --visualize --full`
+
 <div align="center">
 
-## AI Mini Game — Unlock My Developer Profile
+<table>
+<tr>
+<td width="50%">
 
-> **GitHub doesn't support interactive HTML.** Play the full interactive version with real quizzes, XP, and level progression below.
+```
+╔═══════════════════════════════╗
+║     AI ENGINEERING MODULE     ║
+╠═══════════════════════════════╣
+║ RAG Pipelines          ██████ ║
+║ LLM Integration        ██████ ║
+║ Agentic AI             █████░ ║
+║ Prompt Engineering     ██████ ║
+║ MCP Protocol           █████░ ║
+║ FAISS / BM25           ██████ ║
+║ Embeddings + Retrieval ██████ ║
+║ Evidence Grounding     ██████ ║
+╚═══════════════════════════════╝
+```
 
-<br/>
+</td>
+<td width="50%">
 
-[![Play the AI Quiz Game](https://img.shields.io/badge/Play%20Interactive%20Game-Unlock%20My%20Profile-00d4ff?style=for-the-badge&labelColor=0d1117&logo=github)](https://santhosh-2226.github.io/ai-profile-game/)
+```
+╔═══════════════════════════════╗
+║    MACHINE LEARNING MODULE    ║
+╠═══════════════════════════════╣
+║ TensorFlow / PyTorch   ██████ ║
+║ XGBoost / RF           ██████ ║
+║ Scikit-Learn           ██████ ║
+║ Feature Engineering    ██████ ║
+║ Model Evaluation       █████░ ║
+║ Data Pipelines         ██████ ║
+║ EDA + Analytics        ██████ ║
+║ Pandas / NumPy         ██████ ║
+╚═══════════════════════════════╝
+```
 
-<br/>
+</td>
+</tr>
+<tr>
+<td width="50%">
 
-### How It Works
+```
+╔═══════════════════════════════╗
+║   COMPUTER VISION MODULE      ║
+╠═══════════════════════════════╣
+║ OpenCV Operations      ██████ ║
+║ YOLO Detection         ██████ ║
+║ CNN Architecture       ██████ ║
+║ Keras Modeling         █████░ ║
+║ Image Processing       ██████ ║
+║ Object Detection       ██████ ║
+║ Sensor Fusion          █████░ ║
+║ Video Analysis         █████░ ║
+╚═══════════════════════════════╝
+```
 
-| Step | Action | Reward |
-|------|---------|--------|
-| Level 01 | Answer 3 questions on **Useful AI Systems** | +100 XP |
-| Level 02 | Answer 3 questions on **Logic That Scales** | +100 XP |
-| Level 03 | Answer 3 questions on **Grounded AI** | +100 XP |
-| 300 XP | Profile fully **UNLOCKED** | Full skill map + links |
+</td>
+<td width="50%">
 
-<br/>
+```
+╔═══════════════════════════════╗
+║  SOFTWARE ENGINEERING MODULE  ║
+╠═══════════════════════════════╣
+║ DSA + Algorithms       ██████ ║
+║ System Design          █████░ ║
+║ REST API Design        ██████ ║
+║ Database Design        ██████ ║
+║ Docker / DevOps        █████░ ║
+║ OOP Patterns           ██████ ║
+║ Debugging + Testing    ██████ ║
+║ Git + CI/CD            ██████ ║
+╚═══════════════════════════════╝
+```
 
-### Quick Knowledge Check
-
-| Question | Answer |
-|----------|--------|
-| What prevents LLM hallucination better than blind prompting? | **Retrieval + evidence grounding (RAG)** |
-| What makes an AI system production-ready? | **Logs · constraints · APIs · data quality · failure handling** |
-| What is stronger than a chatbot demo? | **A traceable system with reasoning + retrieval + backend** |
-| What does FAISS enable in a RAG pipeline? | **Fast approximate nearest-neighbor search over embeddings** |
-| What is BM25? | **A lexical ranking function using term frequency + doc length normalization** |
-| What defines agentic AI behavior? | **Plan → select tools → execute → observe → iterate** |
-
-<br/>
-
-<img src="https://img.shields.io/badge/Game%20Status-Play%20to%20Unlock-7c3aed?style=for-the-badge&labelColor=0d1117" />
+</td>
+</tr>
+</table>
 
 </div>
 
 ---
 
-> **Setup Instructions for the Interactive Game:**
-> 1. Create a new repo named `ai-profile-game` in your GitHub account
-> 2. Add an `index.html` with the interactive game (see Claude chat for the full HTML source)
-> 3. Enable GitHub Pages → source: `main` branch → root
-> 4. Update the badge link above to `https://santhosh-2226.github.io/ai-profile-game/`
-> 5. Remove this blockquote from your README once set up
-
----
+## `> ./ai_quiz_game.sh --interactive`
 
 <div align="center">
 
-## Platform Links
+```
+╔══════════════════════════════════════════════════════════════════════════╗
+║                                                                          ║
+║    ██████╗ ██╗   ██╗██╗███████╗    ██╗      ██████╗  ██████╗██╗  ██╗   ║
+║   ██╔═══██╗██║   ██║██║╚══███╔╝    ██║     ██╔═══██╗██╔════╝██║ ██╔╝   ║
+║   ██║   ██║██║   ██║██║  ███╔╝     ██║     ██║   ██║██║     █████╔╝    ║
+║   ██║▄▄ ██║██║   ██║██║ ███╔╝      ██║     ██║   ██║██║     ██╔═██╗    ║
+║   ╚██████╔╝╚██████╔╝██║███████╗    ███████╗╚██████╔╝╚██████╗██║  ██╗   ║
+║    ╚══▀▀═╝  ╚═════╝ ╚═╝╚══════╝    ╚══════╝ ╚═════╝  ╚═════╝╚═╝  ╚═╝   ║
+║                                                                          ║
+║              UNLOCK MY DEVELOPER PROFILE — 3 LEVELS · 300 XP            ║
+╚══════════════════════════════════════════════════════════════════════════╝
+```
+
+</div>
+
+> **GitHub renders static Markdown only.** Click below to launch the fully interactive terminal-style quiz with real XP tracking, animations, and profile unlock.
+
+<div align="center">
+
+[![▶ LAUNCH INTERACTIVE QUIZ GAME](https://img.shields.io/badge/▶_LAUNCH-INTERACTIVE_QUIZ_GAME-00ff41?style=for-the-badge&labelColor=0d1117&logo=github)](https://santhosh-2226.github.io/ai-profile-game/)
+
+</div>
+
+```
+╔══════════════════════════════════════════════════════════════════════════╗
+║  GAME PROTOCOL                                                           ║
+╠═══════════════════════╦═══════════════════════════════╦════════════════╣
+║  LEVEL                ║  CHALLENGE DOMAIN             ║  REWARD        ║
+╠═══════════════════════╬═══════════════════════════════╬════════════════╣
+║  LVL_01               ║  Useful AI Systems            ║  +100 XP       ║
+║  LVL_02               ║  Logic That Scales            ║  +100 XP       ║
+║  LVL_03               ║  Grounded AI                  ║  +100 XP       ║
+╠═══════════════════════╬═══════════════════════════════╬════════════════╣
+║  300 XP REACHED       ║  PROFILE UNLOCKED             ║  FULL ACCESS   ║
+╚═══════════════════════╩═══════════════════════════════╩════════════════╝
+```
+
+### `> knowledge_check --quick`
+
+```
+┌──────────────────────────────────────────────────────────────────────────┐
+│  Q: What prevents LLM hallucination better than blind prompting?         │
+│  A: ▶  Retrieval + evidence grounding (RAG)                              │
+├──────────────────────────────────────────────────────────────────────────┤
+│  Q: What makes an AI system production-ready?                            │
+│  A: ▶  Logs · constraints · APIs · data quality · failure handling       │
+├──────────────────────────────────────────────────────────────────────────┤
+│  Q: What does FAISS enable in a RAG pipeline?                            │
+│  A: ▶  Fast approximate nearest-neighbor search over dense embeddings    │
+├──────────────────────────────────────────────────────────────────────────┤
+│  Q: What is BM25?                                                        │
+│  A: ▶  Lexical ranking via term frequency + document length normalization│
+├──────────────────────────────────────────────────────────────────────────┤
+│  Q: What defines agentic AI behavior?                                    │
+│  A: ▶  Plan → select tools → execute → observe → iterate                 │
+├──────────────────────────────────────────────────────────────────────────┤
+│  Q: What is stronger than a chatbot demo?                                │
+│  A: ▶  A traceable system: reasoning + retrieval + backend + constraints │
+└──────────────────────────────────────────────────────────────────────────┘
+```
+
+---
+
+## `> github_stats --fetch --user=Santhosh-2226`
+
+<div align="center">
+
+<img width="49%" src="https://github-readme-stats.vercel.app/api?username=Santhosh-2226&show_icons=true&theme=chartreuse-dark&hide_border=true&bg_color=0d1117&title_color=00ff41&icon_color=39ff14&text_color=c9d1d9&ring_color=00ff41" />
+<img width="49%" src="https://github-readme-streak-stats.herokuapp.com/?user=Santhosh-2226&theme=chartreuse-dark&hide_border=true&background=0d1117&ring=00ff41&fire=39ff14&currStreakLabel=00ff41&sideLabels=00ff41&dates=c9d1d9" />
+
+<br/><br/>
+
+<img width="40%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Santhosh-2226&layout=compact&theme=chartreuse-dark&hide_border=true&bg_color=0d1117&title_color=00ff41&text_color=c9d1d9" />
+
+</div>
+
+---
+
+## `> cat /var/log/activity.log`
+
+<div align="center">
+
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=Santhosh-2226&bg_color=0d1117&color=00ff41&line=39ff14&point=00ff41&area=true&hide_border=true&area_color=001a00" width="100%"/>
+
+</div>
+
+---
+
+## `> ping social_links --all`
+
+<div align="center">
+
+```
+> Resolving endpoints...
+```
+
+<br/>
 
 <a href="https://www.linkedin.com/in/santhosh-iyyappan-b96645291/">
-  <img src="https://img.shields.io/badge/LinkedIn-Santhosh%20Iyyappan-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
+  <img src="https://img.shields.io/badge/[01]_LinkedIn-Santhosh_Iyyappan-00ff41?style=for-the-badge&logo=linkedin&logoColor=0d1117&labelColor=001a00" />
 </a>
+
+<br/><br/>
 
 <a href="https://github.com/Santhosh-2226">
-  <img src="https://img.shields.io/badge/GitHub-Santhosh--2226-100000?style=for-the-badge&logo=github&logoColor=white" />
+  <img src="https://img.shields.io/badge/[02]_GitHub-Santhosh--2226-00ff41?style=for-the-badge&logo=github&logoColor=0d1117&labelColor=001a00" />
 </a>
+
+<br/><br/>
 
 <a href="https://leetcode.com/Santhosh2226">
-  <img src="https://img.shields.io/badge/LeetCode-Santhosh2226-FFA116?style=for-the-badge&logo=leetcode&logoColor=black" />
+  <img src="https://img.shields.io/badge/[03]_LeetCode-Santhosh2226-00ff41?style=for-the-badge&logo=leetcode&logoColor=0d1117&labelColor=001a00" />
 </a>
+
+<br/><br/>
 
 <a href="https://www.codechef.com/users/san2226">
-  <img src="https://img.shields.io/badge/CodeChef-san2226-5B4638?style=for-the-badge&logo=codechef&logoColor=white" />
+  <img src="https://img.shields.io/badge/[04]_CodeChef-san2226-00ff41?style=for-the-badge&logo=codechef&logoColor=0d1117&labelColor=001a00" />
 </a>
+
+<br/><br/>
 
 <a href="https://codeforces.com/profile/santhoshiyyappan033">
-  <img src="https://img.shields.io/badge/Codeforces-santhoshiyyappan033-1F8ACB?style=for-the-badge&logo=codeforces&logoColor=white" />
+  <img src="https://img.shields.io/badge/[05]_Codeforces-santhoshiyyappan033-00ff41?style=for-the-badge&logo=codeforces&logoColor=0d1117&labelColor=001a00" />
 </a>
 
+<br/><br/>
+
 <a href="mailto:santhoshiyyappan033@gmail.com">
-  <img src="https://img.shields.io/badge/Email-santhoshiyyappan033%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
+  <img src="https://img.shields.io/badge/[06]_Email-santhoshiyyappan033@gmail.com-00ff41?style=for-the-badge&logo=gmail&logoColor=0d1117&labelColor=001a00" />
 </a>
+
+<br/><br/>
+
+```
+> All endpoints REACHABLE [6/6] ✓
+```
 
 </div>
 
 ---
 
+## `> echo $DEVELOPER_MANTRA`
+
 <div align="center">
 
-## Developer Mantra
-
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=18&pause=1200&color=7C3AED&center=true&vCenter=true&width=850&lines=Think+clearly.;Build+practically.;Debug+deeply.;Scale+carefully.;Engineer+AI%2C+don%27t+just+use+AI." />
+<img src="https://readme-typing-svg.demolab.com?font=Share+Tech+Mono&weight=600&size=18&pause=1000&color=00FF41&center=true&vCenter=true&width=900&lines=%24+think+--clearly;%24+build+--practically;%24+debug+--deeply;%24+scale+--carefully;%24+engineer_AI+--dont_just_use_AI" />
 
 <br/><br/>
 
-**"I build systems that connect intelligence, software, and real-world decisions."**
+```
+╔══════════════════════════════════════════════════════════════════════════╗
+║                                                                          ║
+║   "I build systems that connect intelligence, software,                  ║
+║    and real-world decisions."                                            ║
+║                                                                          ║
+║   — Not just AI demos. Not just CRUD apps.                              ║
+║   — Systems with reasoning, retrieval, and real engineering.             ║
+║                                                                          ║
+╚══════════════════════════════════════════════════════════════════════════╝
+```
 
-<br/><br/>
+<br/>
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:16213e,50:1a1a2e,100:0d1117&height=120&section=footer&text=Think%20%E2%86%92%20Build%20%E2%86%92%20Scale&fontSize=24&fontColor=00d4ff&fontAlignY=65" width="100%"/>
+```
+[ PROCESS COMPLETE ] — Santhosh Iyyappan profile loaded successfully.
+[ UPTIME: ∞        ] — Systems are online. Building continues.
+[ NEXT ACTION      ] — git commit -m "ship something real"
+```
 
 </div>
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:000000,40:001a00,70:0d1117,100:000000&height=130&section=footer&text=%24+Think+%E2%86%92+Build+%E2%86%92+Scale&fontSize=22&fontColor=00ff41&fontAlignY=65" width="100%"/>
