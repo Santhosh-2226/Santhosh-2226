@@ -1,0 +1,183 @@
+<svg width="1000" height="340" viewBox="0 0 1000 340" xmlns="http://www.w3.org/2000/svg">
+<defs>
+  <radialGradient id="bg" cx="50%" cy="40%" r="65%">
+    <stop offset="0%" stop-color="#002800"/>
+    <stop offset="45%" stop-color="#000d00"/>
+    <stop offset="100%" stop-color="#000000"/>
+  </radialGradient>
+  <radialGradient id="amb-grad" cx="50%" cy="45%" r="40%">
+    <stop offset="0%" stop-color="#00ff41" stop-opacity="0.07"/>
+    <stop offset="100%" stop-color="#00ff41" stop-opacity="0"/>
+  </radialGradient>
+  <filter id="f-glow" x="-30%" y="-30%" width="160%" height="160%">
+    <feGaussianBlur stdDeviation="5" result="blur"/>
+    <feMerge><feMergeNode in="blur"/><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <filter id="f-glow2" x="-20%" y="-20%" width="140%" height="140%">
+    <feGaussianBlur stdDeviation="3" result="blur"/>
+    <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <filter id="f-soft" x="-10%" y="-10%" width="120%" height="120%">
+    <feGaussianBlur stdDeviation="1.5" result="blur"/>
+    <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <linearGradient id="scan-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop offset="0%"   stop-color="#00ff41" stop-opacity="0"/>
+    <stop offset="35%"  stop-color="#00ff41" stop-opacity="0.2"/>
+    <stop offset="50%"  stop-color="#00ff41" stop-opacity="0.7"/>
+    <stop offset="65%"  stop-color="#00ff41" stop-opacity="0.2"/>
+    <stop offset="100%" stop-color="#00ff41" stop-opacity="0"/>
+  </linearGradient>
+  <clipPath id="scene">
+    <rect width="1000" height="340"/>
+  </clipPath>
+  <style>
+    @keyframes scan {
+      0%   { transform: translateY(-4px); opacity: 0; }
+      3%   { opacity: 1; }
+      97%  { opacity: 1; }
+      100% { transform: translateY(344px); opacity: 0; }
+    }
+    .scanline { animation: scan 4s linear infinite; }
+
+    @keyframes flicker {
+      0%,90%,100% { opacity: 1; }
+      92% { opacity: 0.82; }
+      94% { opacity: 1; }
+      97% { opacity: 0.72; }
+      99% { opacity: 1; }
+    }
+    .main-name { animation: flicker 7s ease-in-out infinite; }
+    .last-name { animation: flicker 7s ease-in-out infinite 0.4s; }
+
+    @keyframes pulse1 { 0%,100%{opacity:1} 50%{opacity:0.35} }
+    @keyframes pulse2 { 0%,100%{opacity:1} 50%{opacity:0.35} }
+    @keyframes pulse3 { 0%,100%{opacity:1} 50%{opacity:0.35} }
+    @keyframes pulse4 { 0%,100%{opacity:1} 50%{opacity:0.35} }
+    .dot1 { animation: pulse1 2s ease-in-out infinite 0s; }
+    .dot2 { animation: pulse2 2s ease-in-out infinite 0.5s; }
+    .dot3 { animation: pulse3 2s ease-in-out infinite 1s; }
+    .dot4 { animation: pulse4 2s ease-in-out infinite 1.5s; }
+
+    @keyframes rise1 { 0%{transform:translateY(0);opacity:0} 8%{opacity:0.5} 90%{opacity:0.18} 100%{transform:translateY(-320px);opacity:0} }
+    @keyframes rise2 { 0%{transform:translateY(0);opacity:0} 8%{opacity:0.4} 90%{opacity:0.15} 100%{transform:translateY(-300px);opacity:0} }
+    @keyframes rise3 { 0%{transform:translateY(0);opacity:0} 8%{opacity:0.45} 90%{opacity:0.16} 100%{transform:translateY(-310px);opacity:0} }
+    .f1{animation:rise1 7s linear infinite 0s}
+    .f2{animation:rise2 9s linear infinite 2s}
+    .f3{animation:rise3 6s linear infinite 4s}
+    .f4{animation:rise1 8s linear infinite 1s}
+    .f5{animation:rise2 7s linear infinite 3s}
+    .f6{animation:rise3 9s linear infinite 0.5s}
+    .f7{animation:rise1 6s linear infinite 2.5s}
+    .f8{animation:rise2 8s linear infinite 1.5s}
+
+    @keyframes cblink { 0%,100%{opacity:0.8} 50%{opacity:0.35} }
+    .corners { animation: cblink 3s ease-in-out infinite; }
+
+    @keyframes sub-pulse { 0%,100%{opacity:0.65} 50%{opacity:1} }
+    .subtitle { animation: sub-pulse 3s ease-in-out infinite; }
+
+    @keyframes amb { 0%,100%{opacity:0.5} 50%{opacity:1} }
+    .ambient { animation: amb 4s ease-in-out infinite; }
+  </style>
+</defs>
+
+<!-- Background -->
+<rect width="1000" height="340" fill="url(#bg)"/>
+<rect width="1000" height="340" fill="url(#amb-grad)" class="ambient"/>
+<rect x="1" y="1" width="998" height="338" fill="none" stroke="#00ff41" stroke-width="0.8" stroke-opacity="0.2"/>
+
+<!-- Grid floor -->
+<g clip-path="url(#scene)" opacity="0.4">
+  <line x1="0"   y1="338" x2="1000" y2="338" stroke="#00ff41" stroke-width="0.7" stroke-opacity="0.7"/>
+  <line x1="80"  y1="300" x2="920"  y2="300" stroke="#00ff41" stroke-width="0.5" stroke-opacity="0.55"/>
+  <line x1="160" y1="275" x2="840"  y2="275" stroke="#00ff41" stroke-width="0.4" stroke-opacity="0.42"/>
+  <line x1="230" y1="258" x2="770"  y2="258" stroke="#00ff41" stroke-width="0.3" stroke-opacity="0.32"/>
+  <line x1="290" y1="246" x2="710"  y2="246" stroke="#00ff41" stroke-width="0.25" stroke-opacity="0.24"/>
+  <line x1="340" y1="237" x2="660"  y2="237" stroke="#00ff41" stroke-width="0.2" stroke-opacity="0.18"/>
+  <line x1="500" y1="225" x2="0"    y2="340" stroke="#00ff41" stroke-width="0.5" stroke-opacity="0.45"/>
+  <line x1="500" y1="225" x2="85"   y2="340" stroke="#00ff41" stroke-width="0.4" stroke-opacity="0.38"/>
+  <line x1="500" y1="225" x2="180"  y2="340" stroke="#00ff41" stroke-width="0.35" stroke-opacity="0.32"/>
+  <line x1="500" y1="225" x2="275"  y2="340" stroke="#00ff41" stroke-width="0.3" stroke-opacity="0.27"/>
+  <line x1="500" y1="225" x2="375"  y2="340" stroke="#00ff41" stroke-width="0.25" stroke-opacity="0.22"/>
+  <line x1="500" y1="225" x2="500"  y2="340" stroke="#00ff41" stroke-width="0.5" stroke-opacity="0.45"/>
+  <line x1="500" y1="225" x2="625"  y2="340" stroke="#00ff41" stroke-width="0.25" stroke-opacity="0.22"/>
+  <line x1="500" y1="225" x2="725"  y2="340" stroke="#00ff41" stroke-width="0.3" stroke-opacity="0.27"/>
+  <line x1="500" y1="225" x2="820"  y2="340" stroke="#00ff41" stroke-width="0.35" stroke-opacity="0.32"/>
+  <line x1="500" y1="225" x2="915"  y2="340" stroke="#00ff41" stroke-width="0.4" stroke-opacity="0.38"/>
+  <line x1="500" y1="225" x2="1000" y2="340" stroke="#00ff41" stroke-width="0.5" stroke-opacity="0.45"/>
+  <rect x="0" y="220" width="1000" height="8" fill="#00ff41" opacity="0.03"/>
+</g>
+
+<!-- Corner brackets -->
+<g class="corners" fill="none" stroke="#00ff41" stroke-width="2.5" filter="url(#f-soft)">
+  <polyline points="14,50 14,16 50,16"/>
+  <polyline points="950,16 986,16 986,50"/>
+  <polyline points="14,290 14,324 50,324"/>
+  <polyline points="986,290 986,324 950,324"/>
+</g>
+
+<!-- Floating fragments -->
+<g font-family="'Courier New',monospace" font-size="9" fill="#00ff41" clip-path="url(#scene)">
+  <text x="32"  y="340" class="f1">0xAI RAG FAISS</text>
+  <text x="115" y="340" class="f2">CNN YOLO BM25</text>
+  <text x="215" y="340" class="f3">0x3D EMBED MCP</text>
+  <text x="318" y="340" class="f4">API DOCKER JWT</text>
+  <text x="568" y="340" class="f5">0x00 FAISS VEC</text>
+  <text x="668" y="340" class="f6">LLM RAG AGENT</text>
+  <text x="772" y="340" class="f7">SDE BUILD SHIP</text>
+  <text x="872" y="340" class="f8">CNN 0xFF BERT</text>
+</g>
+
+<!-- Scanline -->
+<rect x="0" y="0" width="1000" height="3" fill="url(#scan-grad)" class="scanline"/>
+
+<!-- 3D SANTHOSH extrusion layers -->
+<text x="508" y="138" text-anchor="middle" font-family="'Arial Black',Arial,sans-serif" font-weight="900" font-size="98" letter-spacing="6" fill="#001406">SANTHOSH</text>
+<text x="507" y="137" text-anchor="middle" font-family="'Arial Black',Arial,sans-serif" font-weight="900" font-size="98" letter-spacing="6" fill="#002008">SANTHOSH</text>
+<text x="506" y="136" text-anchor="middle" font-family="'Arial Black',Arial,sans-serif" font-weight="900" font-size="98" letter-spacing="6" fill="#003410">SANTHOSH</text>
+<text x="505" y="135" text-anchor="middle" font-family="'Arial Black',Arial,sans-serif" font-weight="900" font-size="98" letter-spacing="6" fill="#004a15">SANTHOSH</text>
+<text x="504" y="134" text-anchor="middle" font-family="'Arial Black',Arial,sans-serif" font-weight="900" font-size="98" letter-spacing="6" fill="#00601c">SANTHOSH</text>
+<text x="503" y="133" text-anchor="middle" font-family="'Arial Black',Arial,sans-serif" font-weight="900" font-size="98" letter-spacing="6" fill="#007822">SANTHOSH</text>
+<text x="502" y="132" text-anchor="middle" font-family="'Arial Black',Arial,sans-serif" font-weight="900" font-size="98" letter-spacing="6" fill="#009028">SANTHOSH</text>
+<text x="501" y="131" text-anchor="middle" font-family="'Arial Black',Arial,sans-serif" font-weight="900" font-size="98" letter-spacing="6" fill="#00aa2e">SANTHOSH</text>
+<text x="500" y="130" text-anchor="middle" font-family="'Arial Black',Arial,sans-serif" font-weight="900" font-size="98" letter-spacing="6" fill="#00ff41" filter="url(#f-glow)" class="main-name">SANTHOSH</text>
+
+<!-- 3D IYYAPPAN extrusion layers -->
+<text x="507" y="188" text-anchor="middle" font-family="'Arial Black',Arial,sans-serif" font-weight="900" font-size="44" letter-spacing="20" fill="#001406">IYYAPPAN</text>
+<text x="506" y="187" text-anchor="middle" font-family="'Arial Black',Arial,sans-serif" font-weight="900" font-size="44" letter-spacing="20" fill="#002d0b">IYYAPPAN</text>
+<text x="505" y="186" text-anchor="middle" font-family="'Arial Black',Arial,sans-serif" font-weight="900" font-size="44" letter-spacing="20" fill="#004812">IYYAPPAN</text>
+<text x="504" y="185" text-anchor="middle" font-family="'Arial Black',Arial,sans-serif" font-weight="900" font-size="44" letter-spacing="20" fill="#006419">IYYAPPAN</text>
+<text x="503" y="184" text-anchor="middle" font-family="'Arial Black',Arial,sans-serif" font-weight="900" font-size="44" letter-spacing="20" fill="#008022">IYYAPPAN</text>
+<text x="502" y="183" text-anchor="middle" font-family="'Arial Black',Arial,sans-serif" font-weight="900" font-size="44" letter-spacing="20" fill="#00a02b">IYYAPPAN</text>
+<text x="500" y="182" text-anchor="middle" font-family="'Arial Black',Arial,sans-serif" font-weight="900" font-size="44" letter-spacing="20" fill="#00ee3a" filter="url(#f-glow2)" class="last-name">IYYAPPAN</text>
+
+<!-- Subtitle -->
+<text x="500" y="218" text-anchor="middle" font-family="'Courier New',monospace" font-size="12" letter-spacing="3" fill="#009922" class="subtitle">AI SYSTEMS ENGINEER  |  SDE  |  BUILDER OF REAL SYSTEMS</text>
+
+<!-- Divider -->
+<line x1="120" y1="234" x2="880" y2="234" stroke="#00ff41" stroke-width="0.5" stroke-opacity="0.2"/>
+
+<!-- Status row -->
+<g font-family="'Courier New',monospace" font-size="11" filter="url(#f-soft)">
+  <circle cx="195" cy="256" r="4" fill="#00ff41" class="dot1"/>
+  <text x="207" y="260" fill="#006b1a">STATUS:</text>
+  <text x="263" y="260" fill="#00ff41" font-weight="bold">ONLINE</text>
+
+  <circle cx="370" cy="256" r="4" fill="#00ff41" class="dot2"/>
+  <text x="382" y="260" fill="#006b1a">MODE:</text>
+  <text x="428" y="260" fill="#00ff41" font-weight="bold">BUILD</text>
+
+  <circle cx="518" cy="256" r="4" fill="#00ff41" class="dot3"/>
+  <text x="530" y="260" fill="#006b1a">CLEARANCE:</text>
+  <text x="622" y="260" fill="#00ff41" font-weight="bold">L3</text>
+
+  <circle cx="672" cy="256" r="4" fill="#00ff41" class="dot4"/>
+  <text x="684" y="260" fill="#006b1a">UPTIME:</text>
+  <text x="740" y="261" fill="#00ff41" font-weight="bold" font-size="15">∞</text>
+</g>
+
+<!-- Bottom tagline -->
+<text x="500" y="300" text-anchor="middle" font-family="'Courier New',monospace" font-size="10" letter-spacing="2" fill="#00ff4140">Think → Build → Debug → Scale → Repeat</text>
+
+</svg>
